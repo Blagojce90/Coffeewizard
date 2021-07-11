@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Demo Controller</title>
+</head>
+
+<body>
+	<h1 th:text="${greeting}"></h1>
+	<form action="/demo-2" method="POST">
+		<p>
+			<label>Username:</label>
+			<input type="text" name="username" />
+		</p>
+		<p>
+			<label>Password:</label>
+			<input type="password" name="password" />
+		</p>
+		<p>
+			<button type="submit">Send</button>
+		</p>
+	</form>
+	<p th:text="${message}"></p>
+</body>
+
+</html>
