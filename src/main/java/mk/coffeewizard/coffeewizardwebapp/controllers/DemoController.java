@@ -26,9 +26,24 @@ public class DemoController {
 	
 	@PostMapping("/demo-2")
 	public String getDataFromForm(ModelMap modelMap, @ModelAttribute AuthenticationDto data) {
-		String message = String.format("Vnesovte username %s i passwrod %s", data.getUsername(), data.getPassword());
+		String message = String.format("Vnesovte username %s i password %s", data.getUsername(), data.getPassword());
 		modelMap.put("message", message);
 		return "demo2";
 	}
-
+	
+	@GetMapping("/CreateProfile")
+	public String getCreateProfile() {
+		return "CreateProfile";
+	}
+	@PostMapping("/CreateProfile")
+	public String getDataFormFromForm(ModelMap modelMap,@ModelAttribute CerateProfileInf data) {
+		String message = "Your profile is Created";
+		modelMap.put("message", message);
+	return"CreateProfile";
+	}
+	
+	@GetMapping("/HomePage")
+	public String getHomePage() {
+		return "HomePage";
+	}
 }

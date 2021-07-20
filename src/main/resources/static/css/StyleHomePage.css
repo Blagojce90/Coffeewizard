@@ -1,0 +1,51 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+body {
+	background-image: url(/Images/Homepage.jpg);
+	background-repeat: no-repeat;
+	background-position:center;
+	background-attachment: fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-moz-background-size: cover;
+ 
+	
+}
+
+nav {
+	color: green;
+	float: right;
+	margin-right: 500px;
+	
+}
+
+ label.logo{
+	color:white;
+	font-size: 40pc;
+	font-weight: bold;
+	float: left;
+}
+
+
+a {
+	color: white;
+	font-size: 20px;
+	text-transform: uppercase;
+	display: inline-block;
+	line-height: 60px;
+	margin: 0 20px;
+}
+
+select {
+margin-top: 10cm;
+
+}
+
+
